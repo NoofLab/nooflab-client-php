@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  noofclientphp:
+    build: .
+    container_name: noofclientphp
+    tmpfs:
+      - /tmp
+    volumes:
+      - .:/usr/src/app:cached
+    ports:
+      - "3001:80"
