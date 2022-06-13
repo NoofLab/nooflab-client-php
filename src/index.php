@@ -1,5 +1,5 @@
 <?php
-require("./vendor/httpful/bootstrap.php");
+require_once(__DIR__ . "/../vendor/httpful/bootstrap.php");
 
 class NoofClient {
   private $base_url = "https://api.nooflab.tools";
