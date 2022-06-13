@@ -2,9 +2,13 @@
 
 Simple PHP binding to the public Nooflab API.
 
+Uses [Httpful](https://github.com/nategood/httpful).
+
 ## Example
 
-```
+```php
+require_once("nooflab-client-php/src/index.php");
+
 $client = new NoofClient("API_KEY_IS_REQUIRED");
 var_dump($client->get_optimal_locations(["00140"], "capital_region"))
 ```
